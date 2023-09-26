@@ -52,3 +52,15 @@ canvas {
 .count-particles {
     border-radius: 0 0 3px 3px;
 }
+
+#container {
+    background: transparent;
+    color: white;
+    position: absolute;
+    left: 30%;
+    top: 50%;
+    font-family: 'Terminal', sans-serif;
+    font-size: larger;
+    -webkit-text-stroke-width: 1%;
+    -webkit-text-stroke-color: black;
+}

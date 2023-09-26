@@ -2,13 +2,18 @@
 
 <head>
     <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/terminal.css" rel="stylesheet" type="text/css" />
     <script src="js/particles.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/typed.umd.js"></script>
 </head>
 
 <body>
     <div id="particles-js">
-
+        <div id="container">
+            <h1>Mimir</h1>
+            <h3>I am <span id="element"></span></h3>
+        </div>
     </div>
     <script>
         particlesJS("particles-js",
@@ -68,7 +73,7 @@
                     },
                     "move": {
                         "enable": true,
-                        "speed": 6,
+                        "speed": 3,
                         "direction": "bottom-right",
                         "random": false,
                         "straight": false,
@@ -140,6 +145,18 @@
             requestAnimationFrame(update);
         };
         requestAnimationFrame(update);
+    </script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: [
+                "fullstack engineer",
+                "machine learning developer",
+                "blockchain developer",
+                "data analysis",
+                "amateur quant"
+            ],
+            typeSpeed: 70,
+        });
     </script>
 </body>
 
