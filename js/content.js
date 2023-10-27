@@ -3,6 +3,7 @@ const HOME = document.getElementById("#home");
 const ABOUT = document.getElementById("#about");
 const CONTACT = document.getElementById("#contact");
 const EXPERIENCE = document.getElementById("#experience");
+const PROJECTS = document.getElementById("#projects");
 
 let ACTIVE_ELEMENT = "#home-button"
 
@@ -19,6 +20,9 @@ function changeContent(string) {
         case "#experience":
             setContent(EXPERIENCE.innerHTML);
             break;
+        case "#projects":
+            setContent(PROJECTS.innerHTML);
+            break;
         default:
             ACTIVE_ELEMENT = "#home-button"
             setContent(HOME.innerHTML)
@@ -27,15 +31,15 @@ function changeContent(string) {
     addActiveClass();
 }
 
-function removeActiveClass(){
+function removeActiveClass() {
     document.getElementById(ACTIVE_ELEMENT).classList.remove("active")
 }
 
-function addActiveClass(){
+function addActiveClass() {
     document.getElementById(ACTIVE_ELEMENT).classList.add("active")
 }
 
-function setContent(content){
+function setContent(content) {
     element.innerHTML = content;
 }
 

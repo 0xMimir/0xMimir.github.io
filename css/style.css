@@ -18,6 +18,9 @@ canvas {
     background-position: 50% 50%;
 }
 
+a {
+    text-decoration: none !important;
+}
 
 #container {
     background: transparent;
@@ -25,12 +28,11 @@ canvas {
     position: absolute;
     left: 20%;
     top: 50%;
-    font-family: 'Terminal', sans-serif;
+    font-family: 'Terminal';
     font-size: larger;
     -webkit-text-stroke-width: 1%;
     -webkit-text-stroke-color: black;
 }
-
 
 .nav-menu ul {
     display: flex;
